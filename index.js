@@ -26,7 +26,6 @@ client.on('ready', () => {
 })
 client.on('messageCreate', async message =>{
     var er = new MessageEmbed()
-    .setAuthor('Phil')
     .setColor(`RED`)
     .setTimestamp();
     if(message.author.bot) return;
