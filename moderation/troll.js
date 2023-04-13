@@ -3,7 +3,7 @@ const { MessageEmbed, PermissionsBitField } = require(`discord.js`);
 module.exports = {
     name: 'troll',
     run: async (client, message, args) => {
-if (!member.permissions.has(PermissionsBitField.Flags.ManageMessages)) return
+if (!message.member.permissions.hass(PermissionsBitField.Flags.ManageMessages)) return
 
 		let channel = message.mentions.channels.first();
         let announcement = args.slice(1).join(" ");
