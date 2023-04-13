@@ -28,7 +28,6 @@ client.on('messageCreate', async message =>{
     var er = new MessageEmbed()
     .setAuthor('Phil')
     .setColor(`RED`)
-    .setAuthor(client.user.username, client.user.avatarURL())
     .setTimestamp();
     if(message.author.bot) return;
     if(!message.content.startsWith(prefix)) return;
