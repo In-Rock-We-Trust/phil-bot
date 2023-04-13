@@ -17,7 +17,7 @@ client.config = require("./config.json");
 ["commands"].forEach(handler => {
     require(`./handlers/${handler}`)(client);
 }); 
-require("./twitter.js")(client);
+//require("./twitter.js")(client);
 require("./music.js")(client);
 client.on('ready', () => {
     console.log(`${client.user.username} ✅`)
