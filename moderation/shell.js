@@ -14,7 +14,6 @@ module.exports = {
 
         const e = new MessageEmbed()
         .setColor("BLURPLE")
-        .setAuthor(client.user.username, client.user.avatarURL())
         .setDescription(`\`\`\`js\n ${res.slice(0, 4000)}\`\`\``)
         .setTimestamp()
         message.channel.send({embeds:[e]})
