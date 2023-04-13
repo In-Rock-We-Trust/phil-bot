@@ -5,6 +5,8 @@ const db = require("quick.db")
 module.exports = {
     name : 'sotd',
     run : async(client, message, args, er) => {
+      if (!message.member.permissions.hass(PermissionsBitField.Flags.ManageMessages)) return
+
     const song = args.join(" ")
     if(!song) return message.channel.send({content: "Provide a song."})
 
