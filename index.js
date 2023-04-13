@@ -12,7 +12,7 @@ const token = config.token
 client.commands = new Collection();
 client.aliases = new Collection();
 client.categories = fs.readdirSync("./commands/");
-client.config = require("./config.js");
+client.config = require("./config.json");
 
 ["commands"].forEach(handler => {
     require(`./handlers/${handler}`)(client);
